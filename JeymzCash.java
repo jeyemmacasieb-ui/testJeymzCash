@@ -17,12 +17,12 @@ public class JeymzCash {
 
 	public static void main(String[] args) {
 		WalletService wallet = new WalletService();
-		wallet.register("09171234567", "Alice Vance", new BigDecimal("5000.00"));
-		wallet.register("09179876543", "Bob Vance", new BigDecimal("1200.00"));
+		wallet.register("09922030061", "Jeymz Pogi", new BigDecimal("5000.00"));
+		wallet.register("09603897249", "JM Pogi P. Din", new BigDecimal("1200.00"));
 
 		try (Scanner scanner = new Scanner(System.in)) {
 			System.out.println("=== JeymzCash Mobile Wallet ===");
-			System.out.println("Demo accounts: 09171234567 (Alice) and 09179876543 (Bob)");
+			System.out.println("Demo accounts: 09922030061 (Jeymz) and 09603897249 (JM Pogi P. Din)");
 			WalletAccount current = chooseAccount(scanner, wallet);
 
 			while (current != null) {
